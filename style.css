@@ -1,0 +1,88 @@
+:root {
+    --primary-red: #ff0000;
+    --dark-grey: #212121;
+    --light-bg: #f9f9f9;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--light-bg);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: var(--dark-grey);
+}
+
+.app-container {
+    max-width: 900px;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+header p { color: #606060; margin-bottom: 30px; }
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background: var(--primary-red);
+    color: white;
+    border: none;
+    padding: 0 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { background: #cc0000; }
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.thumb-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.thumb-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.dl-btn {
+    display: block;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.content-section {
+    margin-top: 60px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}
